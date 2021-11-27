@@ -1,0 +1,22 @@
+{
+    "name": "Setting",
+    "alias": "setting",
+    "description": "",
+    "keywords": [
+        "framework",
+        "laravel",
+        "boilerplate",
+        "setting"
+    ],
+    "priority": 0,
+    "providers": [
+        "Modules\\Setting\\Providers\\SettingServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": [],
+    "minimumCoreVersion": "",
+    "title": "Setting",
+    "version":"0.0.1",
+    "author": "Hafijul Islam"
+}
