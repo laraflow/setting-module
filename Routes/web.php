@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Rap2hpoutre\LaravelLogViewer\LogViewerController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::prefix('setting')->group(function() {
+Route::prefix('setting')->name('system.')->group(function() {
     Route::get('/', 'SettingController@index');
+    //Log Viewer
+    Route::get('logs', [LogViewerController::class, 'index'])->name('logs');
 });
