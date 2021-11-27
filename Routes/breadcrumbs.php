@@ -4,7 +4,7 @@ use Diglactic\Breadcrumbs\Breadcrumbs;
 use Diglactic\Breadcrumbs\Generator as BreadcrumbTrail;
 
 Breadcrumbs::for('system.', function (BreadcrumbTrail $trail) {
-    $trail->parent('admin.');
+    $trail->parent('home');
     $trail->push('System ', route('system.'));
 });
 
